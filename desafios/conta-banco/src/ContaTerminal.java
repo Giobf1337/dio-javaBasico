@@ -3,6 +3,7 @@ import java.util.Scanner;
 public class ContaTerminal {
     public static void main(String[] args){
 
+        // Variáveis exigidas na descrição do projeto
         int numero_conta;
         double saldo;
         String agencia;
@@ -23,6 +24,7 @@ public class ContaTerminal {
         saldo = scan.nextDouble();
 
         System.out.println("=====================================");
+        // Print padrão solicitado na proposta do Projeto:
         System.out.println("\t Olá, "+nome_cliente+"! Obrigado por criar uma conta em nosso banco!\n");
         System.out.println("\t>Sua agência é: "+agencia+"\n\t>Conta: "+numero_conta+ "\n\t>Seu saldo atual: "+ saldo+ " já está disponível para saque.");
     }
