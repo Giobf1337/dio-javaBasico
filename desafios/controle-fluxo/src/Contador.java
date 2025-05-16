@@ -26,7 +26,7 @@ public class Contador {
         }else if(paramUm>paramDois){
             throw new ParametrosInvalidosException();
         }
-        for(int i = 0; i<=contagem;i++){
+        for(int i = 0; i<contagem;i++){
             System.out.println("Imprimindo o numero " + (i+1));
         }
 
