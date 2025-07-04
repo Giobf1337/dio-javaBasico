@@ -1,0 +1,35 @@
+---
+config:
+  theme: dark
+---
+classDiagram
+direction TB
+    class ReprodutorMusical {
+	    +tocar()
+	    +pausar()
+	    +selecionarMusica(String musica)
+    }
+    class AparelhoTelefonico {
+	    +ligar(String numero)
+	    +atender()
+	    +iniciarCorreioDeVoz()
+    }
+    class NavegadorInternet {
+	    +exibitPagina(String url)
+	    +adicionarNovaAba()
+	    +atualizarPagina()
+    }
+    class iPhone {
+	    -imei: String
+	    -model: String
+	    -color: String
+	    +homeButton() void
+    }
+
+	<<Interface>> ReprodutorMusical
+	<<Interface>> AparelhoTelefonico
+	<<Interface>> NavegadorInternet
+
+    iPhone <|-- ReprodutorMusical
+    iPhone <|-- AparelhoTelefonico
+    iPhone <|-- NavegadorInternet
